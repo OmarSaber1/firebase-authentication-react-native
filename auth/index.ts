@@ -7,7 +7,7 @@ interface CreateUserData {
 
 export const createUser = async ({ email, password }: CreateUserData) => {
   const user = await axios.post(
-    "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD0HznfTDQdP3zZTjGcEzG9dgZvKt0vLE4",
+    "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=",
     {
       email,
       password,
@@ -20,7 +20,7 @@ export const createUser = async ({ email, password }: CreateUserData) => {
 export const login = async ({ email, password }: CreateUserData) => {
   try {
     const user = await axios.post(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD0HznfTDQdP3zZTjGcEzG9dgZvKt0vLE4",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=",
       {
         email,
         password,
